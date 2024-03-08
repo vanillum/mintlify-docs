@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Layouts.dev",
   "logo": {
-    "dark": "/logo/logomark_dark.svg",
-    "light": "/logo/wordmark_logo.svg"
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
   },
   "favicon": "/logo/layouts-logo-transparent.svg",
   "colors": {
