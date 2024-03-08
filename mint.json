@@ -1,85 +1,114 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Layouts.dev",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/logomark_dark.svg",
+    "light": "/logo/wordmark_logo.svg"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/layouts-logo-transparent.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#171717",
+    "light": "#F4F3F1",
+    "dark": "#171717",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#171717",
+      "to": "#453D3D"
     }
   },
   "topbarLinks": [
     {
-      "name": "Support",
+      "name": "Help",
       "url": "mailto:hi@mintlify.com"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
+    "name": "Sign In",
     "url": "https://dashboard.mintlify.com"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
   "anchors": [
     {
-      "name": "Documentation",
+      "name": "Docs",
       "icon": "book-open-cover",
       "url": "https://mintlify.com/docs"
     },
     {
       "name": "Community",
-      "icon": "slack",
+      "icon": "discord",
       "url": "https://mintlify.com/community"
     },
     {
       "name": "Blog",
-      "icon": "newspaper",
+      "icon": "book",
       "url": "https://mintlify.com/blog"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Layouts 101",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "essentials/introduction",
+        "essentials/Layouts syntax",
+        "essentials/export",
+        "essentials/help"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Account setup",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "Editor",
+        "Docs",
+        "Preview",
+        "Code"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Components",
       "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "Accordion",
+        "Alert",
+        "Alert Dialog",
+        "Aspect Ratio",
+        "Avatar",
+        "Badge",
+        "Button",
+        "Calendar",
+        "Card",
+        "Carousel",
+        "Checkbox",
+        "Collapsible",
+        "Combobox",
+        "Command",
+        "Context Menu",
+        "Data Table",
+        "Date Picker",
+        "Dialog",
+        "Drawer",
+        "Dropdown Menu",
+        "Form",
+        "Hover Card",
+        "Input",
+        "Label",
+        "Menubar",
+        "Navigation Menu",
+        "Pagination",
+        "Popover",
+        "Progress",
+        "Radio Group",
+        "Resizable",
+        "Scroll Area",
+        "Select",
+        "Separator",
+        "Sheet",
+        "Slider",
+        "Sonner",
+        "Switch",
+        "Table",
+        "Tabs",
+        "Textarea"
+        "Toast",
+        "Toggle",
+        "Toggle Group",
+        "Tooltip"
       ]
     }
   ],

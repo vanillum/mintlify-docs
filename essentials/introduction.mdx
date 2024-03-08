@@ -1,0 +1,211 @@
+---
+title: Quickstart
+description: 'Everything you need to start using Layouts.'
+---
+
+<img
+  className="block dark:hidden"
+  src="/images/docs-hero-light.svg"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/docs-hero-light.svg"
+  alt="Hero Dark"
+/>
+
+Layouts is the notebook experience for building TailwindCSS projects. 
+
+What's primarily different compared to your standard HTML experience, is that in Layouts, we use a concise syntax to help you code faster, by removing all the code-fluff.
+
+This guide will walk you through how to start building Tailwind UIs and get the most out of Layouts.
+
+## The basics
+
+<AccordionGroup>
+  <Accordion title="Layouts Syntax" icon="code">
+  We use a more concise version of HTML for building in Layouts. This allows for ultimate flexibility and creativity in the editor. 
+  Components are represented by a line beginning with `/componentName`. We use tabulations to structure the components of the page into a tree of parent and children components. 
+  
+  In the example below, both `/button` and `/div` are components.`/button` is the child of `/div` and therefore it will be placed inside it. 
+  
+  Instead of writing: 
+  ```
+  <div class="bg-indigo-100" >
+	<button>
+		Hello
+	</button>
+</div>
+```
+You write: 
+```
+/div bg-indigo-100
+	/button Hello
+```
+
+After the `/componentName`, you can apply a number of different properties including:
+    - Type any Tailwind classes and they’ll be recognized as such. For example, write `bg-indigo-900`
+    - Type any other CSS class using the format `.customClassName`
+    - Specify variants for components using `%variantName` syntax
+    - Add attributes like `@type=button` or `@title=”Title with spaces”` which will be equivalent to HTML attributes like `<div type=”button” ></div>`
+    - Bind a variable to a component by using `$variableName`
+    - Any plain text will be recognized as a text-string and placed as a child of the component
+
+To summarize, type any valid HTML component and you can use any Tailwind class on it. Style away!
+
+  </Accordion>
+
+  <Accordion title="Keyboard actions" icon="keyboard">
+     - Type `/` to see a slash menu and search for components
+     - Select any Tailwind class or variant name and press `Shift + Up` or `Shift + Down` to see the other possible values. 
+     - Write `>>>` after a component tag to paste it's reference implementation. 
+
+    Once you're in your Project's dashboard, you'll navigate to the Actions panel to generate a new 'action'. In the the input field, describe what you want your button to do, and AI will take care of all the complex back-end programming.
+  </Accordion>
+
+   <Accordion title="Pre-made components" icon="bolt">
+    By pressing `/`, you’ll find all [shadcn/UI](https://ui.shadcn.com/) components available in a single keystroke. And a lot more are coming.
+    For example, typing `/dropdown-menu` will grab the shadcn/UI 'dropdown menu' component. By adding `>>>` you can generate the reference implementation and edit from there. 
+
+    Example with reference implementation: 
+    ```
+    /button Open menu
+    	/dropdown-menu w-56
+    		# My account
+    		---
+    		Profile <Shift + Cmd + P>
+    			/icon Single user
+    		Billing <Cmd + B>
+    			/icon Credit card
+    		Settings <Cmd + S>
+    		Keyboard shortcuts <Cmd + K>
+    		---
+    		Team
+    			/icon Multiple users
+    		Invite users w-40
+    			/icon Add a user
+    			Email
+    			Message 
+    				/icon Chat bubble
+    			---
+    			More...
+    				/icon Plus in circle
+    		New Team <Cmd + T>
+    			/icon Plus
+    		---
+    		GitHub
+    		Support 
+    			/icon life saving
+    		API @disabled
+    			/icon Cloud
+    		---
+    		Log out <Shift + Cmd + Q>
+      ```
+
+    </Accordion>
+
+  <Accordion title="Asset Libraries" icon="icons">
+ We've included a number of different asset libraries available to users including icons, illustrations, logos and images.
+ 
+ Examples:
+  - **✅** `/icon A bear` will find you the closest icon we have to a bear
+  - **✅** `/illustration %3d Thumb up emoji` will find you a thumb up emoji in 3d
+  - **✅** `/logo Stripe` will find you the Stripe logo
+  - **✅** `/image <libraryName>:SpaceX astronauts` will find you (from Unsplash, Google images, etc.) or generate (Dalle-E, Stable diffusion, OpenJourney, etc) an image of SpaceX astronauts (eg `/image openjourney:SpaceX astronauts`)
+
+  </Accordion>
+    <Accordion title="Exporting your code" icon="upload">
+    Check out **Deploying Buttons** for more details on how to publish across specific platforms.
+
+    **For basic instructions to setup Buttons.dev on any no-code platform:**
+
+    Most platforms enable you to add scripts in the project's or page's settings. Add this script to your header tag: 
+    ```
+    <script src="https://cdn.buttons.dev?pid=<YOUR_PROJECT_ID>"></script>
+
+    ```
+
+    If you don't have a project ID, just add ```<script src="https://cdn.buttons.dev"></script>``` and the platform will give you the right line to paste when you click on your buttons.
+
+
+  </Accordion>
+</AccordionGroup>
+
+## Managing actions
+
+<AccordionGroup>
+  <Accordion title="Dashboard" icon="sidebar">
+Once an action is created, you can see it in your dashboard on https://app.buttons.dev. You can browse thru all of your projects there, and see all the actions generated for each project.
+  </Accordion>
+
+  <Accordion title="Access to code" icon="code">
+   Within your Actions panel, you have the the option to edit your code manually, chat with an AI to improve it, or even ask a human developer to make modifications.
+  </Accordion>
+
+   <Accordion title="Monitoring" icon="network-wired">
+    It's helpful to understand which calls have been made to your action and how it responded.
+    </Accordion>
+
+  <Accordion title="Change API Provider" icon="webhook">
+    Check out the [Accordion](/content/components/accordion) docs for all the supported props.
+  </Accordion>
+  
+  <Accordion title="Permissions" icon="shield">
+    Check out the [Accordion](/content/components/accordion) docs for all the supported props.
+  </Accordion>
+</AccordionGroup>
+
+## Deployment options
+
+Effortlessly publish across your favorite web platforms.
+
+<CardGroup cols={2}>
+  <Card
+    title="Framer"
+    icon="react"
+    href="https://mintlify.com/docs/settings/global"
+  >
+    Customize your docs to your company's colors and brands
+  </Card>
+  <Card
+    title="Webflow"
+    icon="react"
+    href="https://mintlify.com/docs/api-playground/openapi"
+  >
+    Automatically generate endpoints from an OpenAPI spec
+  </Card>
+  <Card
+    title="Bubble.io"
+    icon="react"
+    href="https://mintlify.com/docs/components/accordion"
+  >
+    Build interactive features and designs to guide your users
+  </Card>
+  <Card
+    title="React"
+    icon="react"
+    href="https://mintlify.com/showcase"
+  >
+    Check out our showcase of our favorite documentation
+  </Card>
+  <Card
+    title="Typedream"
+    icon="react"
+    href="https://mintlify.com/showcase"
+  >
+    Check out our showcase of our favorite documentation
+  </Card>
+  <Card
+    title="HTML"
+    icon="react"
+    href="https://mintlify.com/showcase"
+  >
+    Check out our showcase of our favorite documentation
+  </Card>
+</CardGroup>
+
+
+## You did it!
+
+Congrats! You’re ready to start building in Layouts! Need support or want to give some feedback? You can join our [community](https://discord.com) or drop us an email at support@creative-robots.ai
+
