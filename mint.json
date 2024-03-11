@@ -26,11 +26,7 @@
     "url": "https://dashboard.mintlify.com"
   },
   "anchors": [
-    {
-      "name": "Docs",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
+
     {
       "name": "Community",
       "icon": "discord",
@@ -46,19 +42,11 @@
     {
       "group": "Layouts 101",
       "pages": [
+        "essentials/What is Layouts",
         "essentials/introduction",
         "essentials/Layouts syntax",
         "essentials/export",
         "essentials/help"
-      ]
-    },
-    {
-      "group": "Account setup",
-      "pages": [
-        "Editor",
-        "Docs",
-        "Preview",
-        "Code"
       ]
     },
     {
@@ -104,7 +92,7 @@
         "Switch",
         "Table",
         "Tabs",
-        "Textarea"
+        "Textarea",
         "Toast",
         "Toggle",
         "Toggle Group",
